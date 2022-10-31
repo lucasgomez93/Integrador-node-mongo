@@ -1,0 +1,378 @@
+
+body{
+    border: 0;
+    margin: 15px;
+   
+}
+
+*{margin: 5px;
+    border: 0;
+}
+
+/* HEADER */
+header{
+    margin-top: 30px;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    font-family: 'Saira', sans-serif;
+}
+
+.image-logo {
+    display: flex;
+    transition-duration: .5s;
+     
+}
+.image-logo:hover{
+    transform: scale(1.05);
+    cursor:pointer;
+}
+.name{
+    display: flex;
+    flex-direction: column;
+    margin-top: 8vw;
+}
+.name h1{
+ font-size: 2rem;
+ text-align: center;
+ 
+}
+.name h2 {
+    font-size: 2rem;
+    
+}
+
+nav{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    width: 224.53px;
+}
+.login-f{
+    white-space: nowrap;
+    color: black;
+    border-radius: 5px;
+    align-items: center;
+    text-align: center;
+    font-size: large;
+    text-decoration: none;
+}
+.products-f{
+    white-space: nowrap;
+    color: black;
+    border-radius: 5px;
+    align-items: center;
+    text-align: center;
+    font-size: large;
+    text-decoration: none;
+}
+.login:hover {
+    border-radius: 5px;
+    transform: scale(1.05);
+    transition-duration: .5s;
+    background-color:rgb(143, 185, 228);
+    color: white;
+    cursor:pointer;
+}
+.products-f:hover {
+    transition-duration: .5s;
+    color: white;
+    
+}
+.products:hover {
+    border-radius: 5px;
+    transform: scale(1.05);
+    transition-duration: .5s;
+    background-color:rgb(143, 185, 228);
+    cursor:pointer;
+}
+.login-a{
+    white-space: nowrap;
+    color: black;
+    border-radius: 5px;
+    align-items: center;
+    text-align: center;
+    font-size: large;
+    text-decoration: none;
+}
+.login-f:hover {
+    transition-duration: .5s;
+    color: white;
+}   
+.login-a:hover {
+    transition-duration: .5s;
+    color: white;
+}   
+.logout{
+    white-space: nowrap;
+    color: black;
+    border-radius: 5px;
+    align-items: center;
+    text-align: center;
+    font-size: large;
+    text-decoration: none;
+}
+.logout:hover {
+    border-radius: 5px;
+    transform: scale(1.05);
+    transition-duration: .5s;
+    background-color:rgb(143, 185, 228);
+    color: white;
+    cursor:pointer;
+}
+
+main{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+}
+/* FORM EDIT */
+.data-actual{
+    font-size: large;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.btn-cancel-change{
+    text-decoration: none;
+    color: rgb(36, 36, 36);
+    font-family: Arial, Helvetica, sans-serif;
+}
+.btn-cancel-change:hover{
+    border-bottom: 1.3px solid white;
+    transform: scale(1.05);
+    transition-duration: .5s;
+}
+.btn-delete{
+    text-decoration: none;
+    color: rgb(36, 36, 36);
+    font-family: Arial, Helvetica, sans-serif;
+}
+.btn-delete:hover{
+    border-bottom: 1.3px solid white;
+    transform: scale(1.05);
+    transition-duration: .5s;
+}
+.btn-reload{
+    text-decoration: none;
+    color: rgb(36, 36, 36);
+    font-family: Arial, Helvetica, sans-serif;
+}
+.btn-reload:hover{
+    border-bottom: 1.3px solid black;
+    transform: scale(1.05);
+    transition-duration: .5s;
+}
+#hard-change{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+}
+/* FORM LOGIN */
+.user-login{
+    font-size: 1.5rem;
+    text-align: center;
+    color: black;
+    margin-bottom: 1rem;
+}
+.div-register{
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+}
+.register{
+    text-decoration: none;
+    color: rgb(36, 36, 36);
+    font-family: Arial, Helvetica, sans-serif;
+}
+.register:hover{
+border-bottom: 1px solid white;
+transform: scale(1.05);
+transition-duration: .5s;
+}
+.btn-login{
+    background-color: beige;
+    width:315px ;
+    height: 30px;
+    font-family: 'Saira', sans-serif;
+    font-size: large;
+    color: rgb(112, 109, 109);
+    width: 325px;
+
+}
+.btn-login:hover {
+    cursor: pointer;
+    background-color: rgb(218, 189, 164);
+    border-radius: 5px;
+    transform: scale(1.05);
+    transition-duration: .5s;
+    color: black;
+}
+/* FORMS */
+form{
+    background-color:rgb(233, 238, 243);
+    border-radius: 5px;
+    color: rgb(112, 109, 109);
+    font-size: 1rem;
+    padding: 20px;
+    margin: 0 auto;
+    width: 350px;
+    align-items: center;
+    text-align: start;
+    font-family: 'Saira', sans-serif;
+}
+.user{
+    font-size: 1.5rem;
+    text-align: center;
+    color: black;
+    margin-bottom: 2rem;
+}
+
+.field{
+    border-radius: 5px;
+    margin: 0;
+    border: solid 1px rgb(197, 197, 197);
+    padding: 10px;
+    width: 325px;
+    font-family: 'Saira', sans-serif;
+    font-size: 0.9rem;
+}
+
+.btn{
+    background-color: beige;
+    width:315px ;
+    height: 30px;
+    font-family: 'Saira', sans-serif;
+    font-size: large;
+    color: rgb(112, 109, 109);
+    width: 325px;
+
+}
+.btn:hover {
+    cursor: pointer;
+    background-color: rgb(218, 189, 164);
+    border-radius: 5px;
+    transform: scale(1.05);
+    transition-duration: .5s;
+    color: black;
+}
+
+
+.message-login{
+    display: flex;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 1.2rem;
+    justify-content: center;
+    color: chocolate; 
+}
+.message-register{
+    display: flex;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 1.2rem;
+    justify-content: center;
+    color: red; 
+}
+.message-formEdit{
+    display: flex;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 1.2rem;
+    justify-content: center;
+    color: red; 
+}
+.center-content1{
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end; 
+}
+.login-btn{
+    text-decoration: none;
+    color: rgb(36, 36, 36);
+    font-family: Arial, Helvetica, sans-serif;
+}
+.login-btn:hover{
+    border-bottom: 1px solid white;
+    transform: scale(1.05);
+    transition-duration: .5s;
+    }
+/* FOOTER */
+
+footer{
+    display: flex;
+    font-family: 'Saira', sans-serif;
+    justify-content: end;
+    font-size: large;  
+    margin-top: 3rem;
+    margin-right: 5rem;
+}
+.contact {
+    text-decoration: none;
+    color: black;
+}
+.contact:hover{
+    transform: scale(1.05);
+    transition-duration: .5s;
+    color: white;
+    background-color:rgb(143, 185, 228);
+    border-radius: 5px;
+    cursor:pointer;
+}
+
+/* MEDIA QUERY  576px */
+@media only screen and (max-width:576px) { 
+    header {
+        width: 500px;
+        flex-direction: column;
+        text-align: center;
+    }
+    .name {
+        margin-top: auto;
+    }
+    nav{
+        display: flex;
+        flex-direction: row;
+        width: max-content;
+   
+    }
+    main{
+        width: 576px;
+        align-items: center;
+        margin-top: 45px;
+    }
+    footer{
+        width: 576px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin: auto;
+    }
+    
+}
+
+/* MEDIA QUERY  768px */
+@media only screen and (max-width:768px) { 
+    header {
+        width: 740px;
+        flex-direction: column;
+        text-align: center;
+    }
+    .name {
+        margin-top: auto;
+    }
+    nav{
+        display: flex;
+        flex-direction: row;
+        width: max-content;
+   
+    }
+    main{
+        width: 740px;
+    }
+    form{
+        margin-top: 30px;
+    }
+    footer{
+        width: 768px;
+        margin: auto;
+        display: flex;
+        justify-content: center;
+    }
+    
+}

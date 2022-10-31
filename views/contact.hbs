@@ -1,0 +1,57 @@
+<link rel="stylesheet" href="../styles/style-contact.css">
+<main>
+
+<form action="/contact" method="post">
+        <p id="consult"> ¿Necesitas ayuda?</p>
+        <p>Nombre:</p>
+        <input type="text" id="name" name="name" aria-label="escriba su nombre aquí" value="{{contactData.name}}">
+        <span id="errors">
+            {{#each arrErrors}}
+           <div> {{msg.name1}} </div> 
+           <div> {{msg.name2}} </div> 
+            {{/each}}
+        </span>
+
+        <p>Correo electrónico:</p>
+        <input type="text" id="email" name="email" aria-label="escriba su email aquí" value="{{contactData.email}}">
+        <span id="errors">
+             {{#each arrErrors}}
+           <div> {{msg.email1}} </div> 
+           <div> {{msg.email2}} </div> 
+            {{/each}}
+        </span>
+
+
+        <p>Asunto:</p>
+        <input type="text" id="theme" name="theme" aria-label="escriba el asunto aquí" value="{{contactData.theme}}">
+        <span id="errors">
+            {{#each arrErrors}}
+           <div> {{msg.theme1}} </div> 
+           <div> {{msg.theme2}} </div> 
+            {{/each}}
+        </span>
+
+
+        <p>Mensaje:</p>
+        <textarea id="message" name="message" aria-label="escriba su mensaje aquí">{{contactData.message}}</textarea>
+        {{message}}
+        <span id="errors">
+             {{#each arrErrors}}
+           <div> {{msg.message1}} </div> 
+           <div> {{msg.message2}} </div> 
+            {{/each}}
+        </span>
+        <br />
+        <div id="center-content">
+            <input type="submit" id="btn-sendData" value="Enviar Consulta">
+            </input>
+        </div>
+
+    </form>
+
+</main>
+<br>
+<br>
+<div id="sendMail">
+    {{sendMailFeedback}}
+</div>

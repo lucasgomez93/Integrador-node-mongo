@@ -1,0 +1,264 @@
+html{
+    /* width: 80%; */
+    height: 50%;
+}
+
+*{
+    margin: 5px;
+    border: 0;
+    box-sizing: border-box;
+}
+
+/* HEADER */
+header{
+    margin-top: 30px;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    font-family: 'Saira', sans-serif;
+}
+
+.image-logo {
+    display: flex;
+    transition-duration: .5s;
+     
+}
+.image-logo:hover{
+    transform: scale(1.05);
+    cursor:pointer;
+}
+.name{
+    display: flex;
+    flex-direction: column;
+    margin-top: 8vw;
+}
+.name h1{
+ font-size: 2rem;
+ text-align: center;
+ 
+}
+.name h2{
+    font-size: 2rem;
+    
+}
+
+nav{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    width: 224.53px;
+}
+.login-f{
+    white-space: nowrap;
+    color: black;
+    border-radius: 5px;
+    align-items: center;
+    text-align: center;
+    font-size: large;
+    text-decoration: none;
+}
+.products-f{
+    white-space: nowrap;
+    color: black;
+    border-radius: 5px;
+    align-items: center;
+    text-align: center;
+    font-size: large;
+    text-decoration: none;
+}
+.login:hover {
+    border-radius: 5px;
+    transform: scale(1.05);
+    transition-duration: .5s;
+    background-color:rgb(143, 185, 228);
+    color: white;
+    cursor:pointer;
+}
+.products-f:hover {
+    transition-duration: .5s;
+    color: white;
+    
+}
+.products:hover {
+    border-radius: 5px;
+    transform: scale(1.05);
+    transition-duration: .5s;
+    background-color:rgb(143, 185, 228);
+    cursor:pointer;
+}
+.login-a{
+    white-space: nowrap;
+    color: black;
+    border-radius: 5px;
+    align-items: center;
+    text-align: center;
+    font-size: large;
+    text-decoration: none;
+}
+.login-f:hover {
+    transition-duration: .5s;
+    color: white;
+}   
+.login-a:hover {
+    transition-duration: .5s;
+    color: white;
+}   
+.logout{
+    white-space: nowrap;
+    color: black;
+    border-radius: 5px;
+    align-items: center;
+    text-align: center;
+    font-size: large;
+    text-decoration: none;
+}
+.logout:hover {
+    border-radius: 5px;
+    transform: scale(1.05);
+    transition-duration: .5s;
+    background-color:rgb(143, 185, 228);
+    color: white;
+    cursor:pointer;
+}
+/* MAIN */
+
+.grid-container{
+    margin-top: 10rem;
+    display: grid;
+    justify-content: center;
+    align-items:stretch;
+    text-align: center;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 5rem 5rem;
+    font-family: 'Saira', sans-serif;
+    margin-bottom: 0;
+}
+img{
+    overflow: hidden;
+    cursor: pointer;
+}
+
+img:hover{
+    transition-duration: 2s;
+    transform:translateX(-10%)
+}
+
+.descript{
+    font-family: 'Saira', sans-serif;
+    background-color: azure;
+    box-shadow: 1px 10px 10px rgba(0,0,0,0.5);
+    padding: 1rem 1rem 1rem 1rem;
+    border-radius: 5px;
+    margin-bottom: 3rem;
+    margin-top: 2rem;
+}
+
+h3{
+    text-align: center;
+    color: rgb(110, 109, 109);
+}
+
+ul{
+    text-align: start;
+    padding: 1rem;
+}
+p{
+    font-size: large;
+    font-style: italic;  
+}
+.link-ref{
+    margin-top: 4rem;
+}
+.link-ref:hover{
+    background-color:thistle;
+    transform: scale(1.06);
+    cursor: pointer;
+    color: black;
+    transition-duration: 0.7s;
+    border-radius: 5px;
+}
+/* FOOTER */
+footer{
+    display: flex;
+    font-family: 'Saira', sans-serif;
+    justify-content: end;
+    font-size: large;  
+    margin-top: 3rem;
+    margin-right: 5rem;
+}
+.contact {
+    text-decoration: none;
+    color: black;
+}
+.contact:hover{
+    transform: scale(1.05);
+    transition-duration: .5s;
+    color: white;
+    background-color:rgb(143, 185, 228);
+    border-radius: 5px;
+    cursor:pointer;
+}
+
+/* MEDIA QUERY 576px */
+@media only screen and (max-width:576px) { 
+    header {
+        width: 500px;
+        flex-direction: column;
+        text-align: center;
+    }
+    .name {
+        margin-top: auto;
+    }
+    nav{
+        display: flex;
+        flex-direction: row;
+        width: max-content;
+   
+    }
+    .grid-container{
+        display: flex;
+        flex-wrap: wrap;
+        width: 500px;
+    }
+    footer{
+        width: 576px;
+        margin: auto;
+        display: flex;
+        justify-content: center;
+    }
+    .contact{
+        margin-right: 30px;
+    }
+    
+}
+
+/* MEDIA QUERY  768px */
+@media only screen and (max-width:768px) { 
+    header {
+        width: 740px;
+        flex-direction: column;
+        text-align: center;
+    }
+    .name {
+        margin-top: auto;
+    }
+    nav{
+        display: flex;
+        flex-direction: row;
+        width: max-content;
+   
+    }
+    .grid-container{
+        display: flex;
+        flex-wrap: wrap;
+        width: 700px;
+    }
+    footer{
+        width: 768px;
+        margin:auto;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    
+}

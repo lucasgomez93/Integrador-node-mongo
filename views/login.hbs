@@ -1,0 +1,30 @@
+<link rel="stylesheet" href="../styles/style-register.css">
+
+
+<main>
+    
+        <div class="message-login">
+            {{message}}
+            <br />
+            {{message1}}
+        </div>
+        <br />
+    <form action="/users/login" method="POST">
+        <p class="user-login"> Inicia Sesión</p>
+
+        <p>Correo electrónico:</p>
+        <input type="text" name="email" class="field" aria-label="escriba su email aquí" autofocus > <br />
+
+        <p>Contraseña</p>
+        <input type="password" name="pass" class="field" aria-label="escriba su contraseña aquí"> <br />
+
+      
+    <div class="center-content-login">
+        <input type="submit" class="btn-login" value="Inicia Sesión">
+        <div class="div-register">
+        <a class="register" href="/users/register"> ¿No tienes una cuenta? Regístrate</a>
+        </div>
+    </div>
+    </form>
+
+</main>

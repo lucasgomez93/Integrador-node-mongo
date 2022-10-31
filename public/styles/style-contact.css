@@ -1,0 +1,332 @@
+body{
+    border: 0;
+    margin: 15px;
+   
+}
+
+*{margin: 5px;
+    border: 0;
+}
+
+/* HEADER */
+header{
+    margin-top: 30px;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    font-family: 'Saira', sans-serif;
+}
+
+.image-logo {
+    display: flex;
+    transition-duration: .5s;
+    
+}
+.image-logo:hover{
+    transform: scale(1.05);
+    cursor:pointer;
+}
+.name{
+    display: flex;
+    flex-direction: column;
+    margin-top: 8vw;
+}
+.name h1{
+    font-size: 2rem;
+    text-align: center;
+    
+}
+.name h2 {
+    font-size: 2rem;
+    
+}
+
+nav{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    width: 224.53px;
+}
+.login-f{
+    white-space: nowrap;
+    color: black;
+    border-radius: 5px;
+    align-items: center;
+    text-align: center;
+    font-size: large;
+    text-decoration: none;
+}
+.products-f{
+    white-space: nowrap;
+    color: black;
+    border-radius: 5px;
+    align-items: center;
+    text-align: center;
+    font-size: large;
+    text-decoration: none;
+}
+.login:hover {
+    border-radius: 5px;
+    transform: scale(1.05);
+    transition-duration: .5s;
+    background-color:rgb(143, 185, 228);
+    color: white;
+    cursor:pointer;
+}
+.products-f:hover {
+    transition-duration: .5s;
+    color: white;
+    
+}
+.products:hover {
+    border-radius: 5px;
+    transform: scale(1.05);
+    transition-duration: .5s;
+    background-color:rgb(143, 185, 228);
+    cursor:pointer;
+}
+.login-f{
+    white-space: nowrap;
+    color: black;
+    border-radius: 5px;
+    align-items: center;
+    text-align: center;
+    font-size: large;
+    text-decoration: none;
+}
+.login-f:hover {
+    transition-duration: .5s;
+    color: white;
+}   
+.login-a{
+    white-space: nowrap;
+    color: black;
+    border-radius: 5px;
+    align-items: center;
+    text-align: center;
+    font-size: large;
+    text-decoration: none;
+}
+.login-a:hover {
+    transition-duration: .5s;
+    color: white;
+}   
+.logout{
+    white-space: nowrap;
+    color: black;
+    border-radius: 5px;
+    align-items: center;
+    text-align: center;
+    font-size: large;
+    text-decoration: none;
+}
+.logout:hover {
+    border-radius: 5px;
+    transform: scale(1.05);
+    transition-duration: .5s;
+    background-color:rgb(143, 185, 228);
+    color: white;
+    cursor:pointer;
+}
+/* MAIN */
+main{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+form{
+    display: flex;
+    flex-direction: column;
+    background-color:rgb(211, 223, 235);
+    border-radius: 5px;
+    color: rgb(112, 109, 109);
+    font-size: 1rem;
+    padding: 20px;
+    margin: 0 auto;
+    width: 500px;
+    font-family: 'Saira', sans-serif;
+}
+.consult{
+    font-size: 20px;
+    color: rgb(99, 99, 99);
+    margin-bottom: 15px;
+}
+input, textarea{
+    border-radius: 5px;
+    border: 0;
+    margin:0;
+    outline: none;;
+    width: 480px;
+   
+}
+textarea{
+    height: 110px;
+    
+}
+
+input{
+    
+    border-radius: 5px;
+    margin: 0;
+    border: solid 1px rgb(197, 197, 197);
+    padding: 10px;
+    
+    
+}
+span{
+    margin: 0px;
+}
+div{
+    margin: 0px;
+}
+br{
+    margin: 0px; 
+}
+input:focus{
+    border-color: #18A383;
+}
+
+#btn-sendData{
+    
+    font-family: 'Saira', sans-serif;
+    font-size: 15px;
+    
+}
+#message{
+    width: 496px;
+    margin: 0px;
+    font-family: 'Saira', sans-serif;
+    font-size: 15px;
+}
+
+#email{
+    font-family: 'Saira', sans-serif;
+    font-size: 15px;
+}
+#name{
+    font-family: 'Saira', sans-serif;
+    font-size: 15px;
+}
+#theme{
+    font-family: 'Saira', sans-serif;
+    font-size: 15px;
+}
+
+#btn-sendData{
+    width: 490px;
+}
+
+#btn-sendData:hover{
+    cursor: pointer;
+}
+
+#center-content:hover{
+    transform: scale(1.03);
+    transition-duration: .5s;
+}
+#errors{
+    display: flex;
+    flex-direction: column;
+    text-align: start;
+    color: red;
+    font-size: 15px;
+    font-weight: bold;
+}
+#sendMail{
+    display: flex;
+    flex-direction: column;
+    text-align: center;   
+    font-size: 25px;
+    font-family: 'Saira', sans-serif;
+}
+
+/* FOOTER */
+footer{
+    display: flex;
+    font-family: 'Saira', sans-serif;
+    justify-content: end;
+    font-size: large;  
+    margin-top: 3rem;
+}
+.contact {
+    text-decoration: none;
+    color: black;
+}
+.contact:hover{
+    transform: scale(1.05);
+    transition-duration: .5s;
+    color: white;
+    background-color:rgb(143, 185, 228);
+    border-radius: 5px;
+    cursor:pointer;
+}
+
+/* MEDIA QUERY 576px */
+@media only screen and (max-width:576px) { 
+    header {
+        width: 500px;
+        flex-direction: column;
+        text-align: center;
+    }
+    .name {
+        margin-top: auto;
+    }
+    nav{
+        display: flex;
+        flex-direction: row;
+        width: max-content;
+   
+    }
+    main{
+        width: 480px;
+        align-items: center;
+        margin-top: 45px;
+    }
+    form{
+        height: 480px;
+        width: 500px;
+        padding: 10px;    
+    }
+    footer{
+        width: 576px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin: auto;
+    }
+   
+}
+
+/* MEDIA QUERY 768px */
+@media only screen and (max-width:768px) { 
+    header {
+        width: 740px;
+        flex-direction: column;
+        text-align: center;
+    }
+    .name {
+        margin-top: auto;
+    }
+    nav{
+        display: flex;
+        flex-direction: row;
+        width: max-content;
+   
+    }
+    main{
+        width: 740px;
+    }
+    form{
+        margin-top: 30px;
+        height: 480px;
+        width: 500px;
+        padding: 10px;    
+    }
+    footer{
+        width: 768px;
+        margin: auto;
+        display: flex;
+        justify-content: center;
+    }
+}
+   

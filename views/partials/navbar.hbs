@@ -1,0 +1,32 @@
+<nav>
+    {{#if user}}
+        <div class="login">
+        <a class="login-a" href="/users/settings"> Hola {{user.name}}
+            <i class="fa-solid fa-user"> </i>
+        </a>
+    </div>
+   
+    <div class="products">
+        <a class="products-f" href="/users/products">Productos
+            <i class="fa-solid fa-toolbox"></i>
+        </a>
+    </div>
+    <div class="logout">
+        <a class="logout" href="/users/logout">Cerrar Sesión
+            <i class="fa-sharp fa-solid fa-arrow-right-from-bracket"></i>
+        </a>
+    </div>
+    {{else}}
+    <div class="login">
+        <a class="login-f" href="/users/login">Ingresar
+            <i class="fa-solid fa-user"></i>
+        </a>
+    </div>
+    <div class="products">
+        <a class="products-f" href="/products">Productos
+            <i class="fa-solid fa-toolbox"></i>
+        </a>
+    </div>
+    {{/if}}
+
+</nav>

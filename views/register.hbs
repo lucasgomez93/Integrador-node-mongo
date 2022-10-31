@@ -1,0 +1,31 @@
+<link rel="stylesheet" href="../styles/style-register.css">
+<main>
+    <form action="/users/register" method="POST">
+        <p class="user"> Regístrate</p>
+    <p class="message-register">{{message}}</p>
+        <p>Nombre completo:</p>
+        <input type="text" name="name" class="field" aria-label="escriba su nombre aquí" autofocus> <br />
+
+        <p>Apellido completo:</p>
+        <input type="text" name="lastName" class="field" aria-label="escriba su apellido aquí"> <br />
+
+        <p>Correo electrónico:</p>
+        <input type="text" name="email" class="field" aria-label="escriba su email aquí"> <br />
+
+        <p>Contraseña</p>
+        <input type="password" name="pass" class="field" aria-label="escriba su contraseña aquí"> <br />
+
+        <p>Fecha de nacimiento:</p>
+        <input type="date" name="data" class="field" aria-label="escriba su fecha de nacimiento aquí"> <br />
+
+        <div class="center-content">
+            <input type="submit" class="btn" value="Registrarse">
+        </div>
+        <div class="center-content1">
+            <a class="login-btn" href="/users/login">¿Tienes una cuenta? Inicia Sesión</a>
+        </div>
+
+    </form>
+
+
+</main>

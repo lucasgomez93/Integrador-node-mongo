@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="stylesheet" href="styles/{{style}}">
+    <!-- Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Saira&display=swap" rel="stylesheet">
+    <!-- Icons -->
+    <link rel="schortcut icon" href="public\ICONS\logo_edited.jpg" type="image/x-icon">
+    <!-- Font Awesome -->
+    <script src="https://kit.fontawesome.com/c99a8c03a8.js" crossorigin="anonymous"></script>
+    <title>LG AUTOMACIÓN</title>
+
+
+<body>
+    <header>
+        <div class="logo">
+            <figure class="image-logo">
+                {{#if user}}
+                <a href="/users/home">
+                    <img src="../ICONS/logo_edited.jpg" alt="logo-lg" height="200" title="HOME">
+                </a>
+                {{else}}
+                <a href="/">
+                    <img src="../ICONS/logo_edited.jpg" alt="logo-lg" height="200" title="HOME">
+                </a>
+                {{/if}}
+            </figure>
+        </div>
+        <div class="name">
+            <h2>Productos para instalaciones Industriales</h2>
+            <h1>LG AUTOMACIÓN</h1>
+        </div>
+        {{>navbar}}
+    </header>
+
+
+    {{!-- Para mostrar todo el contenido dinámico triple llave para body --}}
+
+    {{{body}}}
+
+
+
+    <footer>
+        {{>footer}}
+    </footer>
+
+
+
+</body>
+
+</html>

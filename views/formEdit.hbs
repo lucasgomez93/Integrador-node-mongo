@@ -1,0 +1,44 @@
+<link rel="stylesheet" href="../styles/style-register.css">
+<main>
+    <div class="data-actual">
+      <h2>Información de Cuenta</h2>
+      <p>Última modificación: {{user.updatedAt}}</p>
+      {{#if user.validated}}
+      <p>Cuenta Validada</p>
+      {{else}}
+      <p>Cuenta no Validada</p>
+      {{/if}}
+    </div>
+    <form action="/users/settings" method="POST">
+       
+        <p>Nombre completo:</p>
+        <input type="text" name="name" class="field" aria-label="escriba su nombre aquí" value="{{user.name}}">  <br />
+
+        <p>Apellido completo:</p>
+        <input type="text" name="lastName" class="field" aria-label="escriba su apellido aquí" value="{{user.lastName}}"> <br />
+
+        <p>Correo electrónico:</p>
+        <input type="text" name="email" class="field" aria-label="escriba su email aquí"value="{{user.email}}"> <br />
+       
+        <p>Fecha de nacimiento:</p>
+        <input type="date" name="data" class="field" aria-label="escriba su fecha de nacimiento aquí" value="{{user.data}}"> <br />
+
+        <div id="center-content-edit">
+            <input type="submit" class="btn" value="Confirma Cambios">
+        </div>
+        <div id="hard-change">
+            <a href="/" class="btn-cancel-change"> Cancelar Cambios</a>
+            <a href="/users/delete" class="btn-delete"> Eliminar Cuenta</a>
+        </div>
+            
+        
+
+    </form>
+
+    <p class="message-formEdit">{{message}}</p>
+    {{#if message}}
+     <div id="hard-change">
+        <a href="/users/settings" class="btn-reload"> Intente Nuevamente</a>
+    </div>
+    {{/if}}
+</main>
